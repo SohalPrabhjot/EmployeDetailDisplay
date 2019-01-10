@@ -1,0 +1,38 @@
+<html t:type="layout" title="org.EmployeWorld"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd">
+
+<div class="row">
+    <div class="span12">
+        <ul>
+
+
+        <li><t:pagelink page="employeSave" >AddEmployee</t:pagelink></li>
+        </ul>
+        <table class="table table-hover table-bordered table-striped">
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>address</th>
+            <th>salary</th>
+            <th>age</th>
+        </tr>
+
+        <t:loop t:source="employes" t:value="employe">
+            <tr>
+            <td>${employe.id}</td>
+            <td>${employe.name}</td>
+            <td>${employe.address}</td>
+            <td>${employe.salary}</td>
+            <td>${employe.age}</td>
+            </tr>
+
+        </t:loop>
+
+        </table>
+    </div>
+</div>
+
+</html>
+
+
+

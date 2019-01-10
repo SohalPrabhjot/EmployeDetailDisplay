@@ -1,0 +1,38 @@
+<html t:type="layout" title="org.EmployeWorld"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd">
+
+<div class="row">
+    <div class="span4 offset3">
+        <t:form t:id="saveForm" >
+
+            <t:label for="id" >ID</t:label>
+            <t:textfield t:id="id" validate="required" placeholder="id" value="id"/>
+
+            <t:label for="name" >NAME</t:label>
+            <t:textfield t:id="name" validate="required" placeholder="name" value="name"/>
+
+            <t:label for="address" >ADDRESS</t:label>
+            <t:textfield t:id="address" validate="required" placeholder="address" value="address "/>
+
+            <t:label for="age" >AGE</t:label>
+            <t:textfield t:id="age" validate="required" placeholder="age" value="age "/>
+
+             <t:label for="salary" >SALARY</t:label>
+            <t:textfield t:id="salary" validate="required" placeholder="salary" value="salary "/>
+
+
+
+
+            <t:submit class="btn btn-large btn-primary" t:id="sub"  name="save" value="save"/>
+            <!--<t:pagelink page="save" >SAVE</t:pagelink>-->
+
+
+            <!--<t:beaneditform object="employe"/>
+            <t:beaneditform object="employe"
+                            reorder="id,name,address,salary,age" />-->
+
+        </t:form>
+    </div>
+</div>
+
+</html>
