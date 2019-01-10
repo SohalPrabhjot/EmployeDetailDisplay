@@ -7,8 +7,8 @@
 <t:errors/>
             <h2>sign in</h2>
             <t:label for="userName" >UserName</t:label>
-            <t:textfield t:id="userName" validate="required" placeholder="username"  />
-            <t:label for="Password" ></t:label>
+            <t:textfield t:id="userName" validate="required" placeholder="username" value="userName" />
+            <t:label for="password" ></t:label>
             <t:passwordfield t:id="password" value="password" validate="required" placeholder="password"/>
             <t:submit class="btn btn-large btn-primary" value="Sign in"/>
             <!--<t:textarea t:id="userName" aria-rowspan="5" colspan="20"/>-->
